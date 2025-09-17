@@ -19,7 +19,7 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 USER_FILE = "users.json"
 HISTORY_FILE = "prediction_history.csv"
 IMAGE_PATH = r'D:\Internship(yuvaintern)\week1\Project\img.jpeg' 
-DATA_PATH = os.path.join("Database", "diabetes.csv")        
+DATA_PATH = os.path.join("diabetes.csv")        
 
 # ---------------- User persistence ----------------
 def load_users():
@@ -240,3 +240,4 @@ if st.session_state.logged_in:
                 st.sidebar.download_button("Download CSV", f, file_name=HISTORY_FILE, mime="text/csv")
         else:
             st.sidebar.error("No history found yet.")
+
